@@ -78,7 +78,8 @@ class Loader:
         return
 
 if __name__ == "__main__":
+    import pprint
     print "Hello"
     logging.basicConfig(level=logging.DEBUG)
-    loader = Loader("data")
-    print loader.problemsDictionary
+    loader = Loader("config")
+    pprint.pprint(loader.problemsDictionary)
